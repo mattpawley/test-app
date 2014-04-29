@@ -22,6 +22,7 @@
 $(function(){
     $('#vibrate').on('click', function(e){
         e.preventDefault();
+        alert('ok');
         navigator.notification.vibrate(2500);
     });
 });

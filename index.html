@@ -22,8 +22,19 @@
 $(function(){
     $('#vibrate').on('click', function(e){
         e.preventDefault();
-        alert('ok');
-        navigator.notification.vibrate(2500);
+        var $this = $(this);
+
+        if($this.hasClass('on'))
+        {
+            $this.removeClass('on');
+            window.plugins.spinnerDialog.hide();
+        }
+        else
+        {
+            $this.addClass('on');
+            window.plugins.spinnerDialog.show();
+        }
+
     });
 });
 </script>

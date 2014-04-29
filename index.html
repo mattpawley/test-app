@@ -14,7 +14,7 @@
 <body>
 
 <div class="container">
-    <h1>Matt's test app</h1>
+    <h1>Rejuvibrator</h1>
 
     <a href="#" id="vibrate">Vibrate</a>
 </div>
@@ -25,11 +25,21 @@
 $(function(){
     $('#vibrate').on('click', function(e){
         e.preventDefault();
-        var $this = $(this);
+        var $this = $(this),
+            vibrate;
 
-        setInterval(function(){
-            navigator.notification.vibrate(100);
-        }, 200);
+        if($this.hasClass('on'))
+        {
+            $this.text('Vibrate').removeClass('on');
+            vibrate.clearInterval;
+        }
+        else
+        {
+            $this.text('Stop').addClass('on');
+            vibrate = setInterval(function(){
+                navigator.notification.vibrate(100);
+            }, 200);
+        }
 
     });
 });

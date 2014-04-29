@@ -9,6 +9,7 @@
 <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 <script src="cordova.js"></script>
 <script src="spinner.js"></script>
+<script src="vibration.js"></script>
 </head>
 <body>
 
@@ -25,6 +26,8 @@ $(function(){
     $('#vibrate').on('click', function(e){
         e.preventDefault();
         var $this = $(this);
+
+        navigator.notification.vibrate(2500);
 
         if($this.hasClass('on'))
         {

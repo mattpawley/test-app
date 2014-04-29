@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.example" versionCode="10" version = "1.0.0" >
+
+    <!-- General App info and setup -->
+    <name>Rejuvenate Productions</name>
+
+    <description>
+        An test application for Rejuvenate Productions
+    </description>
+
+    <author href="https://www.rejuvenateproductions.com" email="studio@rejuvenateproductions.com">
+        Rejuvenate Productions
+    </author>
+
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
+
+    <!-- Platforms to build into -->
+    <gap:platform name="android" />
+
+    <!-- Preferences -->
+    <preference name="fullscreen" value="true" />
+
+</widget>

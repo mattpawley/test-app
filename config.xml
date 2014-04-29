@@ -21,4 +21,7 @@
     <!-- Preferences -->
     <preference name="fullscreen" value="true" />
 
+    <!-- Plugins -->
+    <gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
+
 </widget>

@@ -6,12 +6,24 @@
 <!--[if gt IE 9]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
 <link href="css/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 </head>
 <body>
 
 <div class="container">
     <h1>Matt's test app</h1>
+
+    <a href="#" id="vibrate">Vibrate</a>
 </div>
 
 </body>
+
+<script>
+$(function(){
+    $('#vibrate').on('click', function(e){
+        e.preventDefault();
+        navigator.notification.vibrate(2500);
+    });
+});
+</script>
 </html>
